@@ -6,5 +6,7 @@ let randomImage = Math.round(Math.random()*images.length);
 
 if(randomImage === 0){
     randomImage = 1;
+} else if(randomImage > 12){
+    randomImage = 12 
 }
 document.body.style = `background-image:url('../img/background-${randomImage}.jpg')`;
